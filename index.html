@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>عايض للسيارات</title>
+   <link rel="icon" href="images/Logo.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Bootstrap link  -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+   <!-- owl-carousel link -->
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="home">  
+<!------------- header section ------------->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light top-0">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand m-0" href="#"><img class="ms-2" src="images/Logo.png" width="30px" alt="">عايض للسيارات</a>
+      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog">المدونه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">السيارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">الصور</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">الفيديوهات</a>
+          </li>
+        </ul> 
+      </div>
+      <ul class="m-0 d-flex align-items-center">
+        <li class="nav-item">
+          <a href="profile.html">
+            EN
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link button car-button" href="contactUs.html">
+            <span class="text">
+              تواصل معنا
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="h-100 w-100 text-white position-relative">
+    <div class="overlay"></div>
+    <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+          <span>01</span>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+          <span>02</span>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+          <span>03</span>
+        </button>
+        <div></div>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active" data-bs-interval="20000">
+          <img src="images/Header.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>ضمان أقل الأسعار</h4>
+            <p>أفضل باقة لخدمات مابعد البيع أكبر تنوع للسيارات في مكان واحد ، جميع البنوك وشركات التمويل خيارك الأول ومستشارك الأفضل</p>
+            <div class="classification" data-aos="fade-up" data-aos-delay="3000"  data-aos-easing="linear" data-aos-duration="500" >
+              <form class="classification-content" action="" method="#" enctype="multipart">
+                <div class="col px-1">
+                  <input class="w-100" type="search" placeholder="كلمة البحث">
+        
+                </div>
+                <div class="col px-1">
+                  <select>
+                    <option selected disabled>نوع السيارة</option>
+                    <option value="1">هوندا</option>
+                    <option value="2">بي ام دابيلو</option>
+                    <option value="3">تويوتا</option>
+                  </select>
+                </div>
+                
+                <div class="col px-1">
+                  <button type="button" class="btn btn-orange w-100">ابحث</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="images/Header.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>ضمان أقل الأسعار</h4>
+            <p>أفضل باقة لخدمات مابعد البيع أكبر تنوع للسيارات في مكان واحد ، جميع البنوك وشركات التمويل خيارك الأول ومستشارك الأفضل</p>
+            <div class="classification" data-aos="fade-up" data-aos-delay="3000"  data-aos-easing="linear" data-aos-duration="500" >
+              <form class="classification-content" action="" method="#" enctype="multipart">
+                <div class="col px-1">
+                  <input class="w-100" type="search" placeholder="كلمة البحث">
+        
+                </div>
+                <div class="col px-1">
+                  <select>
+                    <option selected disabled>نوع السيارة</option>
+                    <option value="1">هوندا</option>
+                    <option value="2">بي ام دابيلو</option>
+                    <option value="3">تويوتا</option>
+                  </select>
+                </div>
+                
+                <div class="col px-1">
+                  <button type="button" class="btn btn-orange w-100">ابحث</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Header.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>ضمان أقل الأسعار</h4>
+            <p>أفضل باقة لخدمات مابعد البيع أكبر تنوع للسيارات في مكان واحد ، جميع البنوك وشركات التمويل خيارك الأول ومستشارك الأفضل</p>
+            <div class="classification" data-aos="fade-up" data-aos-delay="3000"  data-aos-easing="linear" data-aos-duration="500" >
+              <form class="classification-content" action="" method="#" enctype="multipart">
+                <div class="col px-1">
+                  <input class="w-100" type="search" placeholder="كلمة البحث">
+        
+                </div>
+                <div class="col px-1">
+                  <select>
+                    <option selected disabled>نوع السيارة</option>
+                    <option value="1">هوندا</option>
+                    <option value="2">بي ام دابيلو</option>
+                    <option value="3">تويوتا</option>
+                  </select>
+                </div>
+                
+                <div class="col px-1">
+                  <button type="button" class="btn btn-orange w-100">ابحث</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1366" height="50.002" viewBox="0 0 1366 50.002">
+      <path id="Path_2855" data-name="Path 2855" d="M1366,0h0c-.172.026-21.555,3.156-58.637,7.813C1273.312,12.09,1218.848,18.544,1152.745,25c-74.3,7.257-147.863,13.04-218.648,17.188C846.855,47.3,763.582,49.928,686.591,50H1366V0ZM0,0H0V50H680.143c-77-.073-160.309-2.7-247.624-7.813C361.672,38.041,288.024,32.258,213.62,25,147.423,18.544,92.864,12.09,58.752,7.813,22.034,3.209.217.032,0,0Z" transform="translate(0 0)" fill="#fff"></path>
+    </svg>
+    <a href="#about" id="scroll-to">
+      <img src="images/Group 9.svg" alt="">
+    </a>
+  </main>
+</header>
+
+
+<!-------------- about section -------------->
+<section id="about" class="about my-5">
+  <div class="container">
+    <div class="row gx-0 gy-5">
+      <div class="col-6">
+        <div class="ms-4 mb-5">
+          <h4 class="fw-bold">
+            <span class="main-color">لماذا نحن</span></h4>
+          <p>
+            وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+          </p>
+        </div>
+        <ol>
+          <li>
+            <div class="d-flex">
+              <div class="about-shape"></div>
+              <div>
+                <h5>رؤيتنا</h5>
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex">
+              <div class="about-shape"></div>
+              <div>
+                <h5>هدفنا</h5>
+                <p>
+                  وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="d-flex">
+              <div class="about-shape"></div>
+              <div>
+                <h5>رسالتنا</h5>
+                <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+              </div>
+            </div>
+          </li>
+        </ol>        
+      </div>
+      <div class="col-10 col-md-10 col-lg-6">
+        <div class="car-img position-relative">
+          <div class="img-bg"></div>
+          <img class="w-100 px-3" src="images/about.png" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="our-cars">
+  <!-- <div style="border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%; height:100px; background:#34347A">
+  </div> -->
+  <div class="container new-cars">
+    <h5 class="fw-bold">السيارات</h5>
+    <p class="mt-3 mb-5 w-75 m-auto">
+      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+    </p>
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">هوندا بايلوت EXL 2022</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/02.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة بي ام دبليو</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة تويوتا</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">هوندا بايلوت EXL 2022</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/02.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة بي ام دبليو</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة تويوتا</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more d-flex">
+      <span class="text-white">المزيد</span>
+      <img src="images/arrow.svg" style="filter: brightness(0) invert(1);" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="choose-car">
+  <h5 class="car-heading">الشركاء</h5>
+  <div class="choose-car-slider" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+    <div class="owl-carousel"  >
+     <a href="">
+      <div class="choose-car-item"> 
+        <img src="images/bmw.png" alt="">
+      </div>
+     </a>
+
+     <a href="">
+      <div class="choose-car-item">
+        <img src="images/nissan.png" alt="">
+      </div>
+     </a>
+
+     <a href="">
+      <div class="choose-car-item">
+        <img src="images/toyota.png" alt="">
+      </div>
+     </a>
+
+     <a href="">
+      <div class="choose-car-item"> 
+        <img src="images/bmw.png" alt="">
+      </div>
+     </a>
+
+     <a href="">
+      <div class="choose-car-item">
+        <img src="images/nissan.png" alt="">
+      </div>
+     </a>
+
+     <a href="">
+      <div class="choose-car-item">
+        <img src="images/toyota.png" alt="">
+      </div>
+     </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-------------- our country section -------------->
+<section class="new-cars">
+  <h5 class="car-heading">أحدث السيارات</h5>
+  <div class="new-cars-slider">
+    <div class="owl-carousel">
+      <div class="card">
+        <img src="images/01.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">هوندا بايلوت EXL 2022</h5>
+        </div>
+      </div>
+        <div class="card">
+          <img src="images/02.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة بي ام دبليو</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">سيارة تويوتا</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="more d-flex">
+    <span>المزيد</span>
+    <img src="images/arrow.svg" alt="">
+  </div>
+</div>
+</section>
+
+<section class="gallery">
+  <div class="container">
+    <h5 class="car-heading">
+      معرض الصور
+    </h5>
+    <div class="row gy-4 align-items-center justify-content-between pt-5">
+      <div class="photo col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="800">
+        <a data-fancybox="gallery" href="images/01.jpg"><img class="w-100" src="images/01.jpg"></a>
+      </div>
+      <div class="photo col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="100">
+        <a data-fancybox="gallery" href="images/02.jpg"><img class="w-100" src="images/02.jpg"></a>
+      </div>
+      <div class="photo col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="200">
+        <a data-fancybox="gallery" href="images/03.jpg"><img class="w-100" src="images/03.jpg"></a>
+      </div>
+      <div class="photo col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="300">
+        <a data-fancybox="gallery" href="images/04.jpg"><img class="w-100" src="images/04.jpg"></a>
+      </div>
+      </div>
+    </div>
+    <div class="more d-flex">
+      <span>المزيد</span>
+      <img src="images/arrow.svg" alt="">
+    </div>
+  </div>
+</section>
+
+
+<!------------- client comment section -------------->
+<section class="why-us">
+  <div class="container py-5">
+    <div class="why-us-headline text-center pb-5">
+      <h5 class="car-heading">لماذا نحن الأفضل</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
+    </div>
+    <ul class="row why-us-wraper">
+      <li class="col">
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="about-shape"></div>
+              <h5>تقديم أفضل خدمة بأفضل جودة</h5>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="about-shape"></div>
+              <h5>سعرنا هو الأفضل</h5>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="about-shape"></div>
+              <h5>نضمن لك سيارتك جديدة</h5>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!------------- footer section -------------->
+<footer>
+  <div class="container my-3">
+      <div class="row gx-4 justify-content-between">
+          <!-- الشركه  -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex align-items-center">
+                <img class="ms-3" src="images/svgexport-7 (99) (1).svg" width="10%" alt="">
+                <h4 class="mt-3">اسم الشركة</h4>
+            </div>
+            
+            <p class="my-4">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</p>
+
+            <!-- social -->
+            <div class="social">
+              <div>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- معلومات -->
+          <div class="col-12 col-sm-4 col-md-4 col-lg-2 mt-3">
+              <h4>معلومات</h4>
+              <div class="ln"></div>
+              <ul>
+                <li><a href="aboutUs.html">من نحن</a></li>
+                <li><a href="condition.html">الشروط والأحكام</a></li>
+                <li><a href="">الشحن والتوصيل</a></li>
+                <li><a href="privacy-policy.html">سياسيات الخصوصية</a></li>
+              </ul>
+          </div>
+
+          <!-- خدمة العملاء -->
+          <div class="col-12 col-sm-4 col-sm-4 col-md-4 col-lg-2 mt-3">
+              <h4>خدمة العملاء</h4>
+              <div class="ln"></div>
+              <ul>
+                <li><a href="contactUs.html">تواصل معنا</a></li>
+                <li><a href="">إرجاع الطلب</a></li>
+                <li><a href="">إلغاء الطلب</a></li>
+              </ul>  
+          </div>
+
+           <!-- إضافات -->
+          <div class="col-12 col-sm-4 col-md-4 col-lg-2 mt-3">
+              <h4>إضافات</h4>
+              <div class="ln"></div>
+              <ul>
+                <li><a href="">الشركات</a></li>
+                <li><a href="">قسائم الهدايه</a></li>
+                <li><a href="">العروض المميزه</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- nested footer -->
+  <div class="sub-footer">
+    <p class="text-center mb-0">
+      جميع الحقوق محفوظه لموقع
+       <a href="https://smartvision4p.com" target="_blank">
+          <span class="text-white">سمارت فيجن لتصميم المواقع والتطبيقات<span class="mx-2"> | </span></span>
+          <img src="https://cyclo-bikes.com/style/images/dev.svg" alt="">
+       </a>
+    </p>
+</div>
+</footer>
+
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- lottiefiles script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

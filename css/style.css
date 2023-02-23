@@ -211,13 +211,12 @@ p+.form-control{
    display: flex;
    justify-content: center;
    width: 100%;
-   color: var(--white);
+   color: #fff;
    align-items: center;
    background-position: center center;
    background-size: cover;
    height: 400px;
    position: relative;
-   margin-bottom: 100px;
 }
 .breadcrumb h6 {
    line-height: inherit;
@@ -509,7 +508,7 @@ header main svg {
 }
 .classification-content .btn-orange{
    background: var(--main-color);
-   color: var(--white) !important;
+   color: #fff !important;
    transition: all 0.3s;
 }
 
@@ -661,7 +660,7 @@ section{
 }
 .choose-car-item{
    padding:15px;
-   background-color: var(--white);
+   background-color: #fff;
    width: 120px;
    height: 120px;
    display: flex;
@@ -950,6 +949,100 @@ footer .sub-footer img {
 
 
 
+/* -----------------  videos page ----------------- */
+.video-wrap{
+   position: relative;
+   height: 240px;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.video-wrap img{
+   transition: .4s;
+}
+.video-wrap:hover img{
+   transform: scale(1.2);
+}
+.video-wrap .video-cover-img {
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 100%;
+   height: 100% !important;
+   z-index: 5;
+   cursor: pointer;
+   border: 0 !important;
+   margin: 0 !important;
+   background-color: transparent !important;
+   filter: brightness(.65);
+}
+.video-wrap .op-video {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 6;
+   top: 50%;
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   text-align: center;
+   background: #fff;
+   line-height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--main-color) !important;
+   font-size: 14px;
+}
+.video-wrap .op-video:before {
+   content: "";
+   position: absolute;
+   border: 10px solid #ffffff88;
+   border-radius: 100%;
+   top: -10px;
+   right: -10px;
+   bottom: -10px;
+   left: -10px;
+   box-shadow: 0 0 0 10px #ffffff55;
+}
+.video-wrap:hover .op-video:before{
+   -webkit-animation-duration: 1.5s;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+   -webkit-animation: ripple-out 1s infinite;
+   animation: ripple-out 1s infinite;
+ }
+
+ /* Ripple Out */
+ @keyframes ripple-out {
+     100% {
+         top: -30px;
+         right: -30px;
+         bottom: -30px;
+         left: -30px;
+         opacity: 0;
+     }
+ }
+
+ @-webkit-keyframes ripple-out {
+     100% {
+         top: -30px;
+         right: -30px;
+         bottom: -30px;
+         left: -30px;
+         opacity: 0;
+     }
+ }
+
+.video-wrap .video-cover-img.off,
+.video-wrap .op-video.off {
+   opacity: 0;
+   visibility: hidden;
+}
+
+
+
+
+
 
 
 
@@ -1128,7 +1221,7 @@ footer .sub-footer img {
 
 }
 @media (max-width:576px){
-   header{
+   #header{
       height: 80vh;
    }
    .navbar a {

@@ -254,20 +254,6 @@ $slider.on("input", setBar);
 setBar();
 
 
-
-  // ----- scroll top ------
-
-  var btn = $('#scroll-top');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-  
-
 var changeSlide = 4; // mobile -1, desktop + 1
 // Resize and refresh page. slider-two slideBy bug remove
 var slide = changeSlide;

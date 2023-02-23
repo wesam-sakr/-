@@ -369,11 +369,14 @@ p+.form-control{
 /* ----------------- home page ----------------- */
 
 /* header section */
-header{
+/* header{
    height: 80vh;
-}
+} */
 header .carousel-item{
    height: 100%;
+}
+header .carousel-item img{
+   object-fit: cover;
 }
 header .carousel-caption {
    position: absolute;
@@ -2009,7 +2012,7 @@ footer .sub-footer img {
       display: none;
    }  
 }
-@media (max-width:1050px){
+@media (max-width:991.8px){
    header .classification{
       display: none;
    }

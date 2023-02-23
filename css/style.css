@@ -1011,6 +1011,10 @@ footer .sub-footer img {
    -webkit-animation: ripple-out 1s infinite;
    animation: ripple-out 1s infinite;
  }
+ .vid-title{
+   text-align: center;
+   margin-top: 1rem;
+ }
 
  /* Ripple Out */
  @keyframes ripple-out {
@@ -1040,35 +1044,44 @@ footer .sub-footer img {
 }
 
 
+/* -----------------  common-que page ----------------- */
 
-
-
-
-
-
-
-.accordion-item .accordion-body ul li {
-   padding: 15px 0px;
-   border-bottom: 0.3px solid #ede9e9;
+.common-q{
+   background-color: #F9F9F9;
 }
-.accordion-flush .accordion-item{
-   border: 0;
+#common-q .accordion-item {
+   border: 1px solid #E4E4E4;
+   border-radius: 15px;
    margin-bottom: 1rem;
-}
-.accordion-item , .accordion-button{
-   background-color: transparent;
-}
-.accordion-button:not(.collapsed) {
-   color: initial;
-   background-color:transparent;
-   box-shadow: none;
-}
-.accordion-button:focus {
-   border-color: transparent;
-   box-shadow: none;
-}
-
-/* - */
+   overflow: hidden;
+ }
+ #common-q .accordion-button:focus {
+   border: none;
+   box-shadow: none !important;
+ }
+ #common-q .accordion-button:not(.collapsed) {
+    color: #2A2A2A;
+    box-shadow: none;
+   border: none;
+ }
+ #common-q .accordion-header{
+    overflow: hidden;
+    background: #F2F4FA;
+    border-radius: 10px !important;
+   }
+   #common-q .accordion-button {
+   color: var(--main-color);
+   position: relative;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   border: 1px solid #E4E4E4;
+   border-radius: 8px;
+   font-weight: 500;
+   font-size: large;
+   padding: 1.25rem 2rem;
+   text-align: right !important;
+   border: none !important;
+ }
+/* + */
 .accordion-button::after{
    background-image: none !important;
    content: "+";
@@ -1082,7 +1095,6 @@ footer .sub-footer img {
    text-align: center;
    vertical-align: sub;
    line-height: 1;
-   border: 0.30000001192092896px solid #B5B5B54a;
 }
 
 /* - */

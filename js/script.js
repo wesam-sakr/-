@@ -97,16 +97,16 @@ var sticky = navbar[0].offsetHeight ;
 
 
 // make nav bar static on scroll 
+window.addEventListener("scroll" , function(){
+    if (this.document.documentElement.scrollTop >= sticky) {
+        // $(navbar).css("position", "fixed");
+        $(navbar).addClass("bg-main-color");
+    } else {
+        $(navbar).removeClass("bg-main-color")
+        // $(navbar).css("position", "sticky");
+    }
+})
 if ($("#home").length > 0) {
-    window.addEventListener("scroll" , function(){
-        if (this.document.documentElement.scrollTop >= sticky) {
-            // $(navbar).css("position", "fixed");
-            $(navbar).addClass("bg-main-color");
-        } else {
-            $(navbar).removeClass("bg-main-color")
-            // $(navbar).css("position", "sticky");
-        }
-    })
 }
 else{
     $(navbar).addClass("bg-main-color")
@@ -119,19 +119,16 @@ $('.choose-car-slider .owl-carousel').owlCarousel({
     rtl:true,
     autoplay:true,
     autoplayTimeout:20000,
+    nav:false,
     responsive:{
         0:{
-            items:3,
-            nav:false
+            item:3,
         },
         600:{
-            items:6,
-            nav:false
+            item:6,
         },
         1000:{
             items:9,
-            nav:false,
-            loop:true
         }
     }
 });
@@ -161,29 +158,11 @@ window.addEventListener("scroll" , function(){
         
 })
 
-$('.our-aqars .owl-carousel').owlCarousel({
-    loop:true,
-    margin:30,
-    nav:true,
-    responsiveClass:true,
-    rtl:true,
-    autoplay:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        500:{
-            items:2
-        },
-        992:{
-            items:3
-        }
-    }
-});
+
 $('.new-cars .owl-carousel').owlCarousel({
     loop:true,
     margin:20,
-    nav:true,
+    nav:false,
     responsiveClass:true,
     rtl:true,
     autoplay:false,

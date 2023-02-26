@@ -338,6 +338,7 @@ p+.form-control{
    background-color: #fff;
    border-radius: 50%;
    padding: .5rem;
+   overflow: initial;
 }
 .navbar a{
    color: #fff !important;
@@ -1587,7 +1588,7 @@ filter: brightness(0) invert(.7);
    }
    .contact-us img {
       position: relative;
-      left: -40px;
+      left: -35px;
       bottom: -30px;
   }
 }
@@ -1612,6 +1613,12 @@ filter: brightness(0) invert(.7);
    }
    .about .car-img img {
       padding: 2.5rem 0;
+   }
+   .sub-footer p{
+      font-size: 12px;
+   }
+   .sub-footer img{
+      width: 110px;
    }
 }
 

@@ -8,6 +8,10 @@ else{
   dirAr = false
 }
 
+console.log($('link[title=ltr]')[0])
+
+
+
 
 
 

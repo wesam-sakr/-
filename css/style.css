@@ -139,6 +139,30 @@ p+.form-control{
    outline: none !important;
 }
 
+/* + */
+.accordion-button::after{
+   background-image: none !important;
+   content: "+";
+   position: absolute;
+   left: 1rem;
+   font-size: 25px;
+   width: 30px;
+   height: 30px;
+   background-color: #fff;
+   border-radius: 50%;
+   text-align: center;
+   vertical-align: sub;
+   line-height: 1;
+}
+
+/* - */
+.accordion-button:not(.collapsed)::after { 
+   background-image: none !important;
+   content: "-";
+}
+
+
+
 .car-button {
    border-radius: 3px;
    width: 144px;
@@ -511,7 +535,7 @@ header main svg {
 }
 .classification-content .nice-select{
    border-radius: 0;
-   border-right: 1px solid #2d2d3d;
+   border-right: 1px solid #bbb;
 }
 .classification-content .btn{
    margin-right: 3px;
@@ -706,8 +730,8 @@ section{
    position: relative;
    background: url(../images/cars-bg.svg);
    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+   background-repeat: no-repeat;
+   background-position: center;
    padding: 5rem 0;
    color: #fff;
    text-align: center;
@@ -740,17 +764,6 @@ section{
    display: flex;
    align-items: stretch;
 }
-/* .new-cars .owl-nav{
-   position: absolute;
-   top: -7.4rem;
-   left: 1rem;
-}
-.new-cars .owl-nav button.owl-next{
-   margin-right: 5px;
-}
-.new-cars .owl-nav button.owl-prev{
-   margin-left: 5px;
-} */
 .new-cars .card{
    border-color: transparent;
    background: #FFFFFF;
@@ -1393,7 +1406,7 @@ filter: brightness(0) invert(.7);
    border-radius: 8px;
    font-weight: 500;
    font-size: large;
-   padding: 1rem;
+   padding: 1rem 1rem 1rem 3rem;
    text-align: right !important;
    border: none !important;
 }
@@ -1406,28 +1419,6 @@ filter: brightness(0) invert(.7);
    justify-content: space-between;
    color:  #4B4B4B;;
 }
-/* + */
-.accordion-button::after{
-   background-image: none !important;
-   content: "+";
-   position: absolute;
-   left: 1rem;
-   font-size: 25px;
-   width: 30px;
-   height: 30px;
-   background-color: #fff;
-   border-radius: 50%;
-   text-align: center;
-   vertical-align: sub;
-   line-height: 1;
-}
-
-/* - */
-.accordion-button:not(.collapsed)::after { 
-   background-image: none !important;
-   content: "-";
-}
-
 
 /* ------ contact page ----------- */
 .contact-data .contact-info{

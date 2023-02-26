@@ -1617,7 +1617,7 @@ filter: brightness(0) invert(.7);
    .sub-footer p{
       font-size: 12px;
    }
-   .sub-footer img{
+   footer .sub-footer img{
       width: 110px;
    }
 }

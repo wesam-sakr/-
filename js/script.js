@@ -13,7 +13,12 @@ console.log($('link[title=ltr]')[0])
 
 
 $('#loading').fadeOut(500);
-
+// let screen = $(window).width();
+// console.log(screen);
+// $('.curve').css({
+//     "width":  + "" + screen,"height" : screen * .5,"border-top-left-radius":  (screen * 2),"border-top-right-radius": ($screen * 2)
+// })
+// $('.curve.top').css()
 
 /* -------------------------------- jquery -------------------------------- */ 
 $(".toggle-side-menu-classification").click(function(){

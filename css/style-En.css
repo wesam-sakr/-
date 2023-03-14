@@ -1,6 +1,15 @@
 body{
     direction: ltr;
 }
+@keyframes moreArrow {
+    0% {
+       transform: rotate(90deg) translateY(0PX);
+    }
+ 
+    100% {
+       transform: rotate(90deg) translateY(10PX);
+    }
+ }
 .nice-select ,.nice-select .list li{
     text-align: left !important;
     padding-left: 18px;

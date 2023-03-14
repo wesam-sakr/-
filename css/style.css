@@ -367,6 +367,18 @@ p+.form-control{
    transform: rotate(90deg);
    margin-right: 1rem;
 }
+@keyframes moreArrow {
+   0% {
+      transform: rotate(90deg) translateY(0PX);
+   }
+
+   100% {
+      transform: rotate(90deg) translateY(10PX);
+   }
+}
+.more:hover img{
+   animation: moreArrow .5s ease-out infinite alternate;
+}
 
 .car-heading{
    color: var(--main-color);
@@ -786,16 +798,19 @@ section{
 }
 
 /* ------ cars sections ------ */
+
 .our-cars{
    position: relative;
    background: url(../images/cars-bg.svg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   padding: 5rem 0;
+   padding: 0;
    color: #fff;
    text-align: center;
+   padding: 4rem 0;
 }
+
 .our-cars svg {
    position: absolute;
    bottom: 0;
